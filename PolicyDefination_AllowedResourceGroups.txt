@@ -1,0 +1,29 @@
+{
+    "properties": {
+        "parameters": {
+            "listOfResourceTypesAllowed": {
+                "type": "array",
+				"defaultValue": "VNet1",
+				"allowedvalues":"Microsoft.Compute,Microsoft.Storage,Microsoft.Network"
+                "metadata": {
+                    "description": "The list of locations that can be specified when deploying resources",
+                    "strongType": "location",
+                    "displayName": "Allowed locations"
+                }
+            }
+        },
+        "displayName": "Allowed locations",
+        "description": "This policy enables you to restrict the locations your organization can specify when deploying resources.",
+        "policyRule": {
+			"if": {
+				"not": {
+					"field": "type",
+					"in": "[parameters('listOfResourceTypesAllowed')]"
+				}
+			},
+			"then": {
+				"effect": "deny"
+			}				
+		}
+    }
+}
