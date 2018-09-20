@@ -5,30 +5,6 @@
 
 		"rgName": {
 			"value": "ResourceGroup"
-		},
-		"vnetName": {
-			"value": "VasiVNet1"
-		},
-		"vnetAddressPrefix": {
-			"value": "172.16.0.0/12"
-		},
-		"subnet1Prefix": {
-			"value": "172.16.0.0/24"
-		},
-		"subnet1Name": {
-			"value": "VasiSubnet1"
-		},
-		"subnet2Prefix": {
-			"value": "172.16.1.0/24"
-		},
-		"subnet2Name": {
-			"value": "VasiSubnet2"
-		},
-		"subnet3Prefix": {
-			"value": "172.16.2.0/24"
-		},
-		"subnet3Name": {
-			"value": "VasiSubnet3"
 		}
 	}
 }
